@@ -51,3 +51,13 @@ categories: ["常用工具"]
 > Claude Code 甚至不会使用 VS Code 中配置的代理，这也是为什么在 `settings.json` 中配置 `https.proxy` 参数会不起作用。
 
 正确的处理方式是：在终端中设置 `HTTPS_PROXY` 环境变量，之后再从该命令行打开 VS Code。
+
+
+
+
+
+## 参考资料与网站
+
+1. [Claude 4.6 Sonnet 国内镜像与使用教程](https://claudezh.cn/)
+2. [HeroSMS](https://hero-sms.com/cn/purchases/numbers)
+3. [LoveYouAI](https://ai.iamshuaidi.com/claude-pro)
