@@ -1,7 +1,7 @@
 baseURL = 'https://RussellXX.github.io/'
-locale = 'en-us'
-title = 'RR's notes'
-theme = 'PaperMod"
+languageCode = 'zh-CN'
+title = "RR's notes"
+theme = 'PaperMod'
 
 [params]
   homeInfoParams = {Title = "学习笔记", Content = "记录每天的学习成果"}
