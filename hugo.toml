@@ -28,7 +28,5 @@ theme = 'PaperMod'
   url = "/categories/"
   weight = 2
 
-[[menus.main]]
-  name = "标签"
-  url = "/tags/"
-  weight = 3
+[taxonomies]
+  category = "categories"
