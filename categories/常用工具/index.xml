@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>常用工具 on RR's notes</title><link>https://RussellXX.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</link><description>Recent content in 常用工具 on RR's notes</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://RussellXX.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Claude Code</title><link>https://RussellXX.github.io/posts/2026-04-15-claude-code/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://RussellXX.github.io/posts/2026-04-15-claude-code/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>常用工具 on RR's notes</title><link>https://RussellXX.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/</link><description>Recent content in 常用工具 on RR's notes</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://RussellXX.github.io/categories/%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Claude Code</title><link>https://RussellXX.github.io/posts/2026-04-15-claude-code/</link><pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate><guid>https://RussellXX.github.io/posts/2026-04-15-claude-code/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;The hottest new programming language is English.&lt;/p&gt;
+&lt;p&gt;—— Andrej Karpathy&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;随着 AI 技术（主要是大语言模型和 Agent 技术）的发展，“自然语言编程”逐渐进入了大众的视野。不得不承认的一点是，AI 在对可靠性和代码质量要求不高的情况下，已经能够胜任人类程序员的大多数工作，而在高要求场景下，也能够极大地提升学习和工作效率。这就不得不提到笔者在本科阶段一直坚持“古法编程”，自己上网读文档和博客，对每一行代码都字斟句酌。直到后来进组，不得不在两周写完一个项目时，才“被逼无奈“使用了 Agent（回想起来，自己当时确乎是有些”孔乙己“的影子了）。&lt;/p&gt;
+&lt;p&gt;其实笔者开始接触 AI（或者说 LLM）的时间并不晚，可以说是 2022 年 ChatGPT 发布后比较早接触到的人之一。对于这样一个技术，初次体验给人的感觉当然是震撼，但其实我并没有和有些朋友一样，觉得它的出现可以即刻解放双手，从此一切工作、任务全部交给大模型就行。原因其实也很简单：首先，大模型的能力并没有达到能够”接管一切“的地步，即便在现在来说，如何提高 AI 的可靠性依旧是计算机科学研究的重要课题，无论是后来出现 RAG 技术，还是各类 Coding Agent，都是为了提高一个本质上是概率模型的工具生成结果的可靠性；其次，笔者认为学习和思考是作为一个人应该掌握的基本能力，也就是说，尽管我们的知识储备可能永远赶不上 AI，但是去理解掌握和创造新知识的能力是 AI 学不来的，而这种能力一定是要靠对已有知识的学习和思考来获得。&lt;/p&gt;
+&lt;p&gt;因此，学会如何使用 AI 是提升工作和学习效率的必经之路，可是无论 AI 的能力再强，也不能成为我们停止学习的理由，因为对新知识的探索需要人类的智慧，而人类的智慧需要在学习中才能培养起来。至于对”AI 能否先于人类一步验证哥德巴赫猜想“的讨论，我想还不是时候。&lt;/p&gt;
+&lt;p&gt;在这篇博客中，笔者将记录自己配置并使用 Claude Code 的全过程。&lt;/p&gt;
+&lt;h2 id="注册-anthropic-账号"&gt;注册 Anthropic 账号&lt;/h2&gt;
+&lt;h3 id="准备工作"&gt;准备工作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;科学上网：使用质量较高的节点，最好位于美国或者英国，避免使用多人共用的廉价甚至免费节点，以防止 IP 污染。笔者注册时使用的是 Just my socks + V2Ray。&lt;/li&gt;
+&lt;li&gt;准备注册邮箱：最好使用 Gmail 或者 Outlook，不要用 QQ 或者 163 等。&lt;/li&gt;
+&lt;li&gt;接码平台：使用 &lt;a href="https://hero-sms.com"&gt;Hero-SMS&lt;/a&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="具体步骤"&gt;具体步骤&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 Chrome 浏览器的&lt;strong&gt;无痕模式（Incognito Mode）&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;打开 &lt;a href="https://claude.ai"&gt;Claude 官网&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;进入页面后，强制刷新 3 次，确保浏览器指纹与 IP 地区完全一致。&lt;/li&gt;
+&lt;li&gt;点击 &lt;strong&gt;Continue with Google&lt;/strong&gt; 进行快捷登录。&lt;/li&gt;
+&lt;li&gt;后续步骤注意点：
+&lt;ul&gt;
+&lt;li&gt;进入 Hero-SMS 平台后，先充值，之后再左侧搜索栏查找服务项目（Claude 或 Anthropic）；国家首选美国，若提示拥堵，可切换至英国或智利等冷门地区。&lt;/li&gt;
+&lt;li&gt;账号注册成功后，尽早创建一个 API Key 或考虑升级至 Pro 版本，似乎拥有付费记录或开发者行为能够增加账号权重。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="开通-promax"&gt;开通 Pro/Max&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先在官网的 Settings → Account 找到并复制 Account ID。&lt;/li&gt;
+&lt;li&gt;在&lt;strong&gt;代充平台&lt;/strong&gt;（如 &lt;a href="https://ai.iamshuaidi.com/claude-pro"&gt;LoveYouAI&lt;/a&gt;）根据 Account ID 充值 Pro/Max 会员。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="在-vscode-中使用-claude-code-插件"&gt;在 VSCode 中使用 Claude Code 插件&lt;/h2&gt;
+&lt;p&gt;插件选择官方工具 Claude Code for VS Code。&lt;/p&gt;</description></item></channel></rss>
