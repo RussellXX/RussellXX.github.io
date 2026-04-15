@@ -4,13 +4,16 @@ title = "RR's notes"
 theme = 'PaperMod'
 
 [params]
-  homeInfoParams = {Title = "学习笔记", Content = "记录每天的学习成果"}
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true      # 代码块一键复制
-  math = true                      # 开启 LaTeX
+  ShowCodeCopyButtons = true
+  math = true
+
+  [params.homeInfoParams]
+    Title = "学习笔记"
+    Content = "记录每天的学习成果"
 
 [markup.goldmark.renderer]
   unsafe = true
