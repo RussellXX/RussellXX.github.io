@@ -61,3 +61,4 @@ categories: ["常用工具"]
 1. [Claude 4.6 Sonnet 国内镜像与使用教程](https://claudezh.cn/)
 2. [HeroSMS](https://hero-sms.com/cn/purchases/numbers)
 3. [LoveYouAI](https://ai.iamshuaidi.com/claude-pro)
+4. [在中国使用 Claude Code 解决 403 错误](https://gist.github.com/docularxu/db0053008b9f41328f29d39ffcf7c2b2)
